@@ -220,7 +220,7 @@ bool OneObject::Produce(word ID,word GroupID){
 	int Power=CITY[NNUM].UnitAmount[ID];
 	if(GroupID>=0xFFFE||GroupID==Nat->CITY->DestUnitsGroup){
 		if((XRESRC(NNUM,FoodID)<500&&GroupID==0xFFFE)||!ApplyCost(NNUM,ID,-1,-1)){
-			//if(NNUM==MyNation)AssignHint1("Íåäîñòàòî÷íî ðåñóðñîâ",50);
+			//if(NNUM==MyNation)AssignHint1("ÃÃ¥Ã¤Ã®Ã±Ã²Ã Ã²Ã®Ã·Ã­Ã® Ã°Ã¥Ã±Ã³Ã°Ã±Ã®Ã¢",50);
 			if(GroupID==0xFFFE){
 				PREVIEW=1;
 			}else return false;
@@ -369,7 +369,7 @@ void ProduceObjLink(OneObject* OBJ){
 	};
 	//if(int(NT->NFarms)*15<NT->NGidot+1){
 	//	if(NT->NNUM==MyNation){
-	//		sprintf(Prompt,"Íåäîñòàòî÷íî ôåðì.");
+	//		sprintf(Prompt,"ÃÃ¥Ã¤Ã®Ã±Ã²Ã Ã²Ã®Ã·Ã­Ã® Ã´Ã¥Ã°Ã¬.");
 	//		PromptTime=100;
 	//	};
 	//	return;
@@ -524,7 +524,7 @@ void ProduceObjLink(OneObject* OBJ){
 			if(GID<0xFFFE)OB->ClearOrderedUnlimitedMotion(2,GID);
 			else if(AI_GID<0xFFFE)OB->ClearOrderedUnlimitedMotion(2,AI_GID);
 			else OB->ClearOrderedUnlimitedMotion(2,0xFFFF);
-			OB->NewMonsterSendTo(((xx+PTX[novo-1])<<8)/*+(rando()&1023)-512*/,((yy+PTY[novo-1])<<8)/*+(rando()&1023)-512*/,16,2+128);
+			
 			//if(OBJ->DstX<=0){
 			//	j--;
 			//	OBJ->DstX=((xx+NM->BornPtX[j])<<8);
