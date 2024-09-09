@@ -2645,8 +2645,13 @@ static BOOL doInit( HINSTANCE hInstance, int nCmdShow )
             screen_width = 1920;
             screen_height = 1080;
         }
-        RealLx = screen_width;
-        RealLy = screen_height;
+
+        // Working on scaling
+        
+
+
+        //RealLx = screen_width;
+        //RealLy = screen_height;
     }
 
 	CreateDDObjects(hwnd); 
