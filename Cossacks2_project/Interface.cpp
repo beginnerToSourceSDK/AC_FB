@@ -1,3 +1,6 @@
+// Modified for stretched but fullscreen main menu
+
+
 #include "Limitations.h"
 #include "ddini.h"
 #include "ResFile.h"
@@ -3337,7 +3340,7 @@ resgame:;
     }
     else
     {//Always go for native screen resolution when showing menu in fullscreen
-        SetGameDisplayModeAnyway(screen_width, screen_height);
+        SetGameDisplayModeAnyway(1024, 768);
     }
 };
 void DrawAllEditScreen(){
@@ -3472,7 +3475,7 @@ void EditGame(){
     }
     else
     {//Always go for native screen resolution when showing menu in fullscreen
-        SetGameDisplayModeAnyway(screen_width, screen_height);
+        SetGameDisplayModeAnyway(1024, 768);
     }
 	IgnoreSlow=false;
 };

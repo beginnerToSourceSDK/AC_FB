@@ -220,7 +220,7 @@ bool OneObject::Produce(word ID,word GroupID){
 	int Power=CITY[NNUM].UnitAmount[ID];
 	if(GroupID>=0xFFFE||GroupID==Nat->CITY->DestUnitsGroup){
 		if((XRESRC(NNUM,FoodID)<500&&GroupID==0xFFFE)||!ApplyCost(NNUM,ID,-1,-1)){
-			//if(NNUM==MyNation)AssignHint1("ÃÃ¥Ã¤Ã®Ã±Ã²Ã Ã²Ã®Ã·Ã­Ã® Ã°Ã¥Ã±Ã³Ã°Ã±Ã®Ã¢",50);
+			//if(NNUM==MyNation)AssignHint1("Íåäîñòàòî÷íî ðåñóðñîâ",50);
 			if(GroupID==0xFFFE){
 				PREVIEW=1;
 			}else return false;
@@ -369,7 +369,7 @@ void ProduceObjLink(OneObject* OBJ){
 	};
 	//if(int(NT->NFarms)*15<NT->NGidot+1){
 	//	if(NT->NNUM==MyNation){
-	//		sprintf(Prompt,"ÃÃ¥Ã¤Ã®Ã±Ã²Ã Ã²Ã®Ã·Ã­Ã® Ã´Ã¥Ã°Ã¬.");
+	//		sprintf(Prompt,"Íåäîñòàòî÷íî ôåðì.");
 	//		PromptTime=100;
 	//	};
 	//	return;

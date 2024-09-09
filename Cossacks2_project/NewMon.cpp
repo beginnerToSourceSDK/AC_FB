@@ -13423,7 +13423,7 @@ word GetDoorsInCell(int cx,int cy,int xr,int yr,byte NI){
 				ExRect* DR=NM->Doors;
 				int j4=0;
 				for(int j=0;j<DR->NRects;j++){
-					int xL=x0+DR->Coor[j4  ];
+					int xL=x0+DR->Coor[j4];
 					int yL=y0+DR->Coor[j4+1];
 					int xR=x0+DR->Coor[j4+2];
 					int yR=y0+DR->Coor[j4+3];
